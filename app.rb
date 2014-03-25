@@ -1,9 +1,9 @@
 require 'sinatra'
-require 'slim'
-require 'barista'
 
-register Barista::Integration::Sinatra
+class MyApp < Sinatra::Base
+  register Barista::Integration::Sinatra
 
-get '/' do
-  slim :index
+  get '/' do
+    slim :index
+  end
 end
