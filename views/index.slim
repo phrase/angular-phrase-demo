@@ -1,7 +1,8 @@
 doctype html
 html ng-app="app"
   head
-    title angular-phrase Demo
+    title
+      | {{ "TITLE" | translate }}
 
     meta charset="utf-8"
     meta http-equiv="X-UA-Compatible" content="IE=edge"
@@ -10,11 +11,15 @@ html ng-app="app"
     link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css"
     link rel="stylesheet" href="/css/style.css"
 
-    script src="bower_components/angular/angular.min.js"
-    script src="bower_components/angular-translate/angular-translate.js"
-    script src="javascripts/app/app.js"
     script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"
     script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"
+    script src="bower_components/angular/angular.min.js"
+    script src="bower_components/angular-translate/angular-translate.js"
+    script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.js"
+    script src="bower_components/angular-phrase/angular-phrase.js"
+    script src="javascripts/app/app.js"
+
+    phrase-javascript
 
   body
     div class="navbar navbar-inverse navbar-fixed-top" role="navigation"
@@ -22,13 +27,26 @@ html ng-app="app"
         div class="navbar-header"
           a class="navbar-brand" href="#" AngularJS Translation Demo
 
-        ul class="nav navbar-nav"
-          li class="active"
-            a href="#" Home
+        ul class="nav navbar-nav navbar-right"
+          li class="dropdown" ng-controller="SelectLanguageController"
+            a href="#" class="dropdown-toggle" data-toggle="dropdown"
+              | Language: {{currentLanguage}}
+              b class="caret"
+
+            ul class="dropdown-menu"
+              li ng-class="{'active': currentLanguage == 'en'}"
+                a href="" ng-click="selectLanguage('en')" English (EN)
+              li ng-class="{'active': currentLanguage == 'de'}"
+                a href="" ng-click="selectLanguage('de')" German (DE)
 
     div class="container"
 
       div class="starter-template"
-        h1 Bootstrap starter template
+        h1
+          | {{"HEADLINE" | translate}}
 
-        p class="lead" Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.
+        p class="lead"
+          | {{"INTRO" | translate}}
+
+        p
+          | {{"TEXT" | translate}}
