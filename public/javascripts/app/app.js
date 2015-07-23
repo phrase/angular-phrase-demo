@@ -3,7 +3,7 @@
 
   app = angular.module("app", ['pascalprecht.translate', 'phrase']);
 
-  app.value("phraseAuthToken", "2024342cc784da65e94bb3a9ff1805de");
+  app.value("phraseProjectId", "YOUR-PROJECT-ID");
 
   app.value("phraseEnabled", true);
 
