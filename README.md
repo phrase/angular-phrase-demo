@@ -7,6 +7,7 @@ Check out the source code to see how to integrate angular-phrase with a few line
 ## Live Demo
 
 E-Mail: demo@phraseapp.com
+
 Password: phrase
 
 [http://angular-phrase-demo.herokuapp.com](http://angular-phrase-demo.herokuapp.com)
