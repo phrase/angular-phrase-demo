@@ -6,6 +6,9 @@ Check out the source code to see how to integrate angular-phrase with a few line
 
 ## Live Demo
 
+E-Mail: demo@phraseapp.com
+Password: phrase
+
 [http://angular-phrase-demo.herokuapp.com](http://angular-phrase-demo.herokuapp.com)
 
 ## More Information
@@ -14,5 +17,3 @@ Check out the source code to see how to integrate angular-phrase with a few line
 * [angular-translate](https://github.com/angular-translate/angular-translate)
 * [angular-phrase](https://github.com/phrase/angular-phrase)
 * [Support](http://support.phraseapp.com)
-
-
