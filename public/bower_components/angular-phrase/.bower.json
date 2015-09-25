@@ -1,6 +1,6 @@
 {
   "name": "angular-phrase",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "authors": [
     "PhraseApp <support@phraseapp.com>"
   ],
@@ -40,14 +40,14 @@
     "angular-translate": "~2.0.0",
     "angular-mocks": "~1.2.12"
   },
-  "_release": "2.0.0",
+  "_release": "2.1.0",
   "_resolution": {
     "type": "version",
-    "tag": "2.0.0",
-    "commit": "dd737159c4ce51517810e9583b4501508a966cc5"
+    "tag": "2.1.0",
+    "commit": "f1a4d490f20f43b5b905c6b0a46866b45cbaaf92"
   },
   "_source": "git://github.com/phrase/angular-phrase.git",
-  "_target": "~2.0.0",
+  "_target": "~2.1.0",
   "_originalSource": "angular-phrase",
   "_direct": true
 }

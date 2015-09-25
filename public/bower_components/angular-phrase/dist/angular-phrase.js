@@ -18,10 +18,47 @@
           if (phraseEnabled) {
             $translate._instant = $translate.instant;
             $translate.instant = function(translationId, interpolateParams, interpolationId) {
-              return "" + phraseDecoratorPrefix + "phrase_" + translationId + phraseDecoratorSuffix;
+              return phraseDecoratorPrefix + "phrase_" + translationId + phraseDecoratorSuffix;
             };
           }
           return $translate;
+        }
+      ]);
+    }
+  ]);
+
+  phrase.config([
+    "$compileProvider", function($compileProvider) {
+      return $compileProvider.directive('translate', [
+        "phraseEnabled", "phraseDecoratorPrefix", "phraseDecoratorSuffix", function(phraseEnabled, phraseDecoratorPrefix, phraseDecoratorSuffix) {
+          if (phraseEnabled) {
+            return {
+              priority: 1001,
+              terminal: true,
+              restrict: 'AE',
+              scope: true,
+              compile: function(elem, attr) {
+                var decoratedTranslationId, translationId;
+                if (elem.attr("translate") !== void 0) {
+                  if (elem.attr("translate") !== "") {
+                    translationId = elem.attr("translate");
+                  } else {
+                    translationId = elem.text();
+                  }
+                }
+                if (translationId) {
+                  decoratedTranslationId = phraseDecoratorPrefix + "phrase_" + translationId + phraseDecoratorSuffix;
+                  if (attr.translateValues) {
+                    decoratedTranslationId = decoratedTranslationId + " (" + attr.translateValues + ")";
+                  }
+                  elem.html(decoratedTranslationId);
+                  return elem.removeAttr("translate");
+                }
+              }
+            };
+          } else {
+            return {};
+          }
         }
       ]);
     }
@@ -43,7 +80,9 @@
           var url;
           if (phraseEnabled) {
             url = ['https://', 'phraseapp.com/assets/in-context-editor/2.0/app.js?', new Date().getTime()].join('');
-            $window.PHRASEAPP_CONFIG = { projectId: phraseProjectId };
+            $window.PHRASEAPP_CONFIG = {
+              projectId: phraseProjectId
+            };
             return $window.jQuery.getScript(url);
           }
         }

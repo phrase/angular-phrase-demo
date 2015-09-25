@@ -14,7 +14,11 @@ To use angular-phrase with your application you have to:
 
 ## Demo
 
-See the In-Context Editor in a demo application: [http://angular-phrase-demo.herokuapp.com/](http://angular-phrase-demo.herokuapp.com/)
+E-Mail: demo@phraseapp.com
+
+Password: phrase
+
+[http://angular-phrase-demo.herokuapp.com/](http://angular-phrase-demo.herokuapp.com/)
 
 (Find the source code for the demo on GitHub: [angular-phrase-demo](https://github.com/phrase/angular-phrase-demo)
 
@@ -46,6 +50,8 @@ Configure the module:
 	myApp.value("phraseEnabled", true);
 	myApp.value("phraseDecoratorPrefix", "{{__");
 	myApp.value("phraseDecoratorSuffix", "__}}");
+
+You can find the Project-ID in the Project overview in the PhraseApp Translation Center
 
 ### JavaScript snippet
 
@@ -88,9 +94,9 @@ You can easily solve this issue by using a different decorator syntax for your s
 
 ## TODO
 
-* ~~Add support for `translate` filter~~
-* Add support for `translate` directive
-* Add support for interpolation values
+* [x] Add support for `translate` filter
+* [x] Add support for `translate` directive
+* [ ] Add support for interpolation values
 
 ## Support
 
