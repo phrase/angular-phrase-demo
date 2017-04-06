@@ -1,0 +1,17 @@
+{
+  "name": "angular-phrase-demo",
+  "homepage": "https://github.com/phrase/angular-phrase-demo",
+  "authors": [
+    "PhraseApp <support@phraseapp.com>"
+  ],
+  "description": "Demo application for angular-phrase to demonstrate easy AngularJS localization with angular-translate and angular-phrase ",
+  "main": "",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "angular-phrase": "^2.1.2",
+    "angular-translate-loader-static-files": "^2.15.1",
+    "angular-translate": "^2.15.1",
+    "angular": "^1.6.4"
+  }
+}
