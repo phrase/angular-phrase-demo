@@ -16,9 +16,9 @@ Password: phrase
 ```
 git clone https://github.com/phrase/angular-phrase-demo
 cd angular-phrase-demo
-bower install
 bundle install
-bundle exec rackup -p 3000
+npm install
+npm start
 ```
 Open localhost:3000 in a browser
 

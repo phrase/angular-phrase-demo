@@ -1,0 +1,26 @@
+{
+  "name": "angular-phrase-demo",
+  "version": "1.0.0",
+  "description": "Demo application for angular-phrase to demonstrate easy AngularJS localization with angular-translate and angular-phrase",
+  "scripts": {
+    "start": "bundle exec rackup -p 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phrase/angular-phrase-demo.git"
+  },
+  "author": "PhraseApp <support@phraseapp.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phrase/angular-phrase-demo/issues"
+  },
+  "homepage": "https://github.com/phrase/angular-phrase-demo#readme",
+  "dependencies": {
+    "angular": "^1.6.4",
+    "angular-translate": "^2.15.1",
+    "angular-translate-loader-static-files": "^2.15.1"
+  },
+  "devDependencies": {
+    "angular-phrase": "^2.1.3"
+  }
+}
