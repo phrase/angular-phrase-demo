@@ -12,9 +12,20 @@ Password: phrase
 
 [http://angular-phrase-demo.herokuapp.com](http://angular-phrase-demo.herokuapp.com)
 
+## Local Setup
+```
+git clone https://github.com/phrase/angular-phrase-demo
+cd angular-phrase-demo
+bundle install
+npm install
+npm start
+```
+Open localhost:3000 in a browser
+
+
 ## More Information
 
 * [PhraseApp](https://phraseapp.com/) - The translation management software for multilingual websites, mobile and desktop applications.
 * [angular-translate](https://github.com/angular-translate/angular-translate)
 * [angular-phrase](https://github.com/phrase/angular-phrase)
-* [Support](http://support.phraseapp.com)
+* [Docs](https://phraseapp.com/docs)
