@@ -7,13 +7,15 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    daemons (1.2.4)
-    eventmachine (1.2.3)
+    daemons (1.2.6)
+    eventmachine (1.2.5)
     execjs (2.7.0)
     foreman (0.84.0)
       thor (~> 0.19.1)
-    rack (1.6.5)
-    rack-protection (1.5.3)
+    rack (1.6.9)
+    rack-contrib (1.8.0)
+      rack (~> 1.4)
+    rack-protection (1.5.5)
       rack
     sinatra (1.4.8)
       rack (~> 1.5)
@@ -23,12 +25,12 @@ GEM
       temple (~> 0.7.6)
       tilt (>= 1.3.3, < 2.1)
     temple (0.7.7)
-    thin (1.7.0)
+    thin (1.7.2)
       daemons (~> 1.0, >= 1.0.9)
       eventmachine (~> 1.0, >= 1.0.4)
       rack (>= 1, < 3)
     thor (0.19.4)
-    tilt (2.0.7)
+    tilt (2.0.8)
 
 PLATFORMS
   ruby
@@ -36,13 +38,14 @@ PLATFORMS
 DEPENDENCIES
   barista
   foreman
+  rack-contrib
   sinatra
   slim
   thin
   tilt
 
 RUBY VERSION
-   ruby 2.4.0p0
+   ruby 2.5.0p0
 
 BUNDLED WITH
-   1.14.6
+   1.16.1

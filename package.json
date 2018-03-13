@@ -1,6 +1,6 @@
 {
   "name": "angular-phrase-demo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Demo application for angular-phrase to demonstrate easy AngularJS localization with angular-translate and angular-phrase",
   "scripts": {
     "start": "bundle exec rackup -p 3000"
