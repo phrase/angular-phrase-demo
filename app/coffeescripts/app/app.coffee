@@ -1,6 +1,6 @@
 app = angular.module "app", ['pascalprecht.translate', 'phrase']
 
-# PhraseApp project auth token
+# Phrase project auth token
 app.value "phraseProjectId", "YOUR-PROJECT-ID"
 
 # Set to false to disable In-Context-Editor and use actual translation instead

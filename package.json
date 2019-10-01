@@ -9,7 +9,7 @@
     "type": "git",
     "url": "git+https://github.com/phrase/angular-phrase-demo.git"
   },
-  "author": "PhraseApp <support@phraseapp.com>",
+  "author": "Phrase <support@phrase.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/phrase/angular-phrase-demo/issues"
