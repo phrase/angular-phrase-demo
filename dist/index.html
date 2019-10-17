@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html ng-app="app">
+<head>
+  <title>{{ "TITLE" | translate }}</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <phrase-javascript></phrase-javascript>
+
+<link href="styles.css?75633d27d6ce14b8cede" rel="stylesheet"></head>
+<body>
+<div class="top-bar container-fluid" ng-controller="MenuNavigation">
+  <div class="top-bar__row row">
+    <div class="top-bar__title col col-lg-auto">AngularJS Translation Demo</div>
+    <div class="top-bar__current col">Language: {{currentLanguage}}</div>
+    <div class="col-auto d-flex align-items-center">
+      Choose Language:
+      <ul class="top-bar__menu">
+        <li class="top-bar__menu-element" ng-class="{'active': currentLanguage === 'en'}" ng-click="selectLanguage('en')">English (EN)</li>
+        <li class="top-bar__menu-element" ng-class="{'active': currentLanguage === 'de'}" ng-click="selectLanguage('de')">German (DE)</li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="note-bar">Please keep in mind that when context editor <code>app.value("phraseEnabled", true);</code> then right top menu does not work.</div>
+
+<div class="container">
+  <div class="demo-container">
+    <h1>{{"HEADLINE" | translate}}</h1>
+    <p class="lead">{{"INTRO" | translate}}</p>
+    <p translate="">TEXT</p>
+  </div>
+</div>
+
+<script type="text/javascript" src="main.js?75633d27d6ce14b8cede"></script></body>
+</html>

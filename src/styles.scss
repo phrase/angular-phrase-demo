@@ -1,0 +1,81 @@
+@import '~reset-css';
+@import '~bootstrap-4-grid';
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.top-bar {
+  display: flex;
+  align-items: center;
+  background-color: #0091EB;
+  color: #fff;
+
+  &__row {
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+
+    @media all and (min-width: 992px) {
+      flex-direction: row;
+    }
+  }
+
+  &__title,
+  &__current {
+    @media all and (max-width: 991px) {
+      display: flex;
+      justify-content: center;
+      padding: 15px 0;
+      border-bottom: thin solid #fff;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    background-color: #3EAAEE;
+    margin-left: 15px;
+
+    &-element {
+      display: flex;
+      align-items: center;
+      min-height: 60px;
+      cursor: pointer;
+      padding: 0 15px;
+
+      &:hover, &.active {
+        background-color: #00619A;
+      }
+    }
+  }
+}
+
+.note-bar {
+  background-color: #e2e2e2;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.8rem;
+
+  code{
+    background-color: #d2d2d2;
+    padding: 3px;
+    border-radius: 5px;
+  }
+}
+
+.demo-container {
+  margin-top: 30px;
+
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+}
