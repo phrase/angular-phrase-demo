@@ -6,7 +6,7 @@ Check out the source code to see how to integrate angular-phrase with a few line
 
 ## Live Demo
 
-E-Mail: demo@phrase.com
+E-Mail: demo@phraseapp.com
 
 Password: phrase
 
@@ -16,11 +16,10 @@ Password: phrase
 ```
 git clone https://github.com/phrase/angular-phrase-demo
 cd angular-phrase-demo
-bundle install
 npm install
 npm start
 ```
-Open localhost:3000 in a browser
+Open localhost:8080 in a browser
 
 
 ## More Information
