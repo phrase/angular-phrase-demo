@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/phrase/angular-phrase-demo#readme",
   "dependencies": {
-    "angular": "^1.7.8",
+    "angular": "^1.7.9",
     "angular-translate": "^2.18.1",
     "angular-translate-loader-static-files": "^2.18.1",
     "bootstrap-4-grid": "^3.1.1",
