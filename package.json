@@ -22,6 +22,7 @@
   "homepage": "https://github.com/phrase/angular-phrase-demo#readme",
   "dependencies": {
     "angular": "^1.7.9",
+    "angular-phrase": "^2.1.5",
     "angular-translate": "^2.18.1",
     "angular-translate-loader-static-files": "^2.18.1",
     "bootstrap-4-grid": "^3.1.1",
@@ -33,7 +34,6 @@
     "@types/angular-translate": "^2.16.0",
     "@typescript-eslint/eslint-plugin": "^2.3.3",
     "@typescript-eslint/parser": "^2.3.3",
-    "angular-phrase": "^2.1.4",
     "css-loader": "^3.2.0",
     "eslint": "^6.5.1",
     "html-webpack-plugin": "^3.2.0",
