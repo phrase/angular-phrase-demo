@@ -8,5 +8,6 @@
         "jsx": "preserve",
         "allowJs": true,
         "allowSyntheticDefaultImports": true
-    }
+    },
+    "include": ["src/**/*"]
 }
