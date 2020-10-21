@@ -6,7 +6,7 @@ Check out the source code to see how to integrate angular-phrase with a few line
 
 ## Live Demo
 
-E-Mail: demo@phraseapp.com
+E-Mail: demo@phrase.com
 
 Password: phrase
 
