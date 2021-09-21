@@ -28,3 +28,7 @@ Open localhost:8080 in a browser
 * [angular-translate](https://github.com/angular-translate/angular-translate)
 * [angular-phrase](https://github.com/phrase/angular-phrase)
 * [Docs](https://phrase.com/docs)
+
+## Get help / support
+
+Please contact [support@phrase.com](mailto:support@phrase.com?subject=[GitHub]%20) and we can take more direct action toward finding a solution.
