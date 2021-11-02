@@ -4,14 +4,6 @@ Demo project based on Sinatra to demonstrate usage of angular-phrase module. It 
 
 Check out the source code to see how to integrate angular-phrase with a few lines of code.
 
-## Live Demo
-
-E-Mail: demo@phrase.com
-
-Password: phrase
-
-[http://angular-phrase-demo.herokuapp.com](http://angular-phrase-demo.herokuapp.com)
-
 ## Local Setup
 ```
 git clone https://github.com/phrase/angular-phrase-demo
